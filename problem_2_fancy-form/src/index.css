@@ -1,0 +1,154 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+#root{
+  min-height: 100vh;
+  min-width: 100vw;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #181A20;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  padding: 16px;
+  border-radius: 12px;
+  border:1px solid #2B3139 ;
+  width: 450px;
+}
+
+.form-group label{
+  display: block;
+  color: white;
+}
+
+.form-group__input{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+
+}
+
+
+.form-group__input input {
+  padding: 10px;
+  padding-left: 0;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+  margin-right: 30px;
+  flex: 1;
+  outline: none;
+  
+}
+
+.form-group__token{
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+button.submit-button {
+  padding: 20px 30px;
+  margin-top: 10px;
+  background-color: #FCD535;
+  border: none;
+  border-radius: 5px;
+  color: #202630;
+  cursor: pointer;
+  font-weight: 600;
+  width: 450px;
+}
+
+.submit-button:disabled{
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+
+.modal {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.search-input {
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  height: 300px;
+  overflow-y: auto;
+}
+
+li {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+li img {
+  margin-right: 10px;
+}
+
+.icon__hover-color-white:hover{
+  color:white
+}
+
+.cursor{
+  cursor: pointer;
+}
+
+.divide{
+  margin-bottom: 20px;
+}
+/* custom modal */
+.ReactModalPortal .ReactModal__Overlay--after-open{
+  backdrop-filter: blur(1px);
+  background-color:rgba(255, 255, 255, 0.25) !important; 
+}
+.modal{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
