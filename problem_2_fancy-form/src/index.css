@@ -152,3 +152,14 @@ li img {
   margin-right: auto;
   margin-top: 50px;
 }
+
+.modal .close-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.relative{
+  position: relative;
+}

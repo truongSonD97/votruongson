@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { getListToken } from "../utils/token";
-import Modal from "react-modal";
+import Modal from "./common/Modal";
 
 const tokens =  getListToken()
 
@@ -18,6 +18,7 @@ export const ModalListCoin = ({ isOpen, closeModal, handleTokenSelect }) => {
 
   const handleClose = () => {
     closeModal()
+    setSearchTerm('')
   }
 
   return (
@@ -38,7 +39,6 @@ export const ModalListCoin = ({ isOpen, closeModal, handleTokenSelect }) => {
           </li>
         ))}
       </ul>
-      <button onClick={closeModal}>Close</button>
     </Modal>
   );
 };
